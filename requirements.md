@@ -1,54 +1,37 @@
-# AI Career Mentor for Bharat
+# Project Requirements: AI Career Mentor for Bharat
 
-## 1. Problem Statement
+## Project Overview
+AI Career Mentor for Bharat is an intelligent platform designed to help students and early-career professionals in India with personalized career guidance. The system leverages AI and NLP techniques to provide resume suggestions, interview preparation, skill-building recommendations, and confidence-building support.
 
-Students in Tier-2 and Tier-3 cities lack access to structured career guidance, resume feedback, and mock interview preparation. This results in skill gaps, low placement confidence, and reduced employability opportunities.
+## Functional Requirements
+1. **Conversational AI Assistant**
+   - Users can interact with a chatbot for career advice.
+   - Provides real-time answers to questions about resumes, interviews, and career paths.
 
-There is a need for an affordable, scalable, AI-powered career mentoring platform accessible across Bharat.
+2. **Resume Guidance**
+   - Upload resumes and receive AI-generated suggestions.
+   - Highlight areas of improvement in skills, formatting, and content.
 
+3. **Interview Preparation**
+   - Generate common and role-specific interview questions.
+   - Simulate mock interview sessions with feedback.
 
-## 2. Objectives
+4. **Skill Recommendations**
+   - Suggest personalized courses and certifications based on the user profile.
+   - Track progress of learning suggestions.
 
-- Provide AI-based resume analysis and improvement suggestions
-- Recommend suitable career paths based on skills and interests
-- Conduct AI-powered mock interviews
-- Identify skill gaps and suggest learning resources
-- Ensure accessibility and scalability across India
+5. **User Profile Management**
+   - Store and manage user information securely.
+   - Track career goals and learning history.
 
+## Non-Functional Requirements
+- **Performance:** Response time of AI chatbot < 2 seconds.
+- **Scalability:** Support up to 1000 concurrent users.
+- **Security:** User data must be encrypted and securely stored.
+- **Accessibility:** Compatible with web and mobile devices.
+- **Reliability:** 99% uptime with robust error handling.
 
-
-## 3. Target Users
-
-- Engineering and degree students
-- Fresh graduates
-- Tier-2 and Tier-3 city job seekers
-- Colleges seeking placement support tools
-
-
-## 4. Functional Requirements
-
-- Users can upload resumes (PDF/DOC format)
-- System analyzes resume using NLP
-- AI generates feedback and improvement suggestions
-- Users can select desired job role
-- System conducts AI-based mock interview
-- Skill gap analysis based on selected role
-- Personalized learning recommendations
-
-
-## 5. Non-Functional Requirements
-
-- Scalable cloud infrastructure
-- Secure data storage
-- Fast response time
-- High availability
-- User-friendly interface
-
-
-
-## 6. Expected Impact
-
-- Improved placement readiness
-- Increased student confidence
-- Reduced career inequality
-- AI-driven personalized mentorship at scale
+## Constraints / Assumptions
+- Users have access to a web browser or mobile device.
+- Internet connectivity is required for AI processing.
+- The platform is primarily targeted at Indian students and early-career professionals.
