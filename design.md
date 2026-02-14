@@ -1,62 +1,38 @@
-# System Design – AI Career Mentor for Bharat
+# Project Design: AI Career Mentor for Bharat
 
-## 1. Architecture Overview
+## System Architecture
+- **Client-Server Architecture**
+  - Frontend: React / Streamlit for web interface
+  - Backend: Python (FastAPI / Flask)
+  - AI Module: Hugging Face Transformers for NLP
+  - Database: PostgreSQL or MongoDB for user profiles
 
-User → Web Application → Backend Server → AI Engine → AWS Cloud Services → Response to User
+- **Data Flow**
+  1. User sends a query via frontend.
+  2. Backend routes the query to AI engine.
+  3. AI engine processes the query and generates response.
+  4. Response returned to frontend for user display.
+  5. User interactions and history stored in the database.
 
+## Technology Stack
+- **Frontend:** ReactJS / Streamlit
+- **Backend:** Python, FastAPI / Flask
+- **AI & NLP:** Hugging Face Transformers, pre-trained language models
+- **Database:** PostgreSQL / MongoDB
+- **Deployment:** Cloud hosting (AWS / GCP / Azure)
 
+## Database Schema
+| Table      | Columns                     | Type            |
+|-----------|-----------------------------|----------------|
+| Users      | id, name, email, profile    | int, varchar   |
+| Resume     | id, user_id, content, feedback | int, int, text, text |
+| Skills     | id, user_id, skill_name     | int, int, varchar |
+| Interview  | id, user_id, question, answer | int, int, text, text |
 
-## 2. System Components
+## Diagrams
+- **System Flow Diagram:** Placeholder for diagram image (e.g., `/images/system_flow.png`)
+- **Database ER Diagram:** Placeholder for diagram image (e.g., `/images/db_er.png`)
 
-### a) Frontend Layer
-- Built using React
-- User dashboard
-- Resume upload interface
-- Interview practice interface
-
-### b) Backend Layer
-- Developed using Python or Node.js
-- REST API for communication
-- Request handling and data processing
-
-### c) AI Layer
-- NLP for resume parsing
-- Generative AI for interview simulation
-- Skill matching algorithms
-- Personalized recommendation engine
-
-### d) Cloud Infrastructure (AWS Powered)
-
-Hosted on Amazon Web Services (AWS):
-- EC2 for compute
-- S3 for resume storage
-- Lambda for serverless processing
-- Bedrock for generative AI integration
-- IAM for security and access control
-
-
-## 3. Data Flow
-
-1. User uploads resume
-2. Backend sends data to AI engine
-3. AI processes resume and generates feedback
-4. Data stored securely in AWS
-5. Response displayed to user
-
-
-## 4. Security & Scalability
-
-- Role-based access control using IAM
-- Encrypted data storage
-- Cloud-native scalable architecture
-- Serverless components for cost efficiency
-
-
-
-## 5. Future Enhancements
-
-- Multilingual support
-- Mobile application
-- Industry-specific AI mentors
-- Integration with job portals
-- College analytics dashboard
+## Additional Design Notes
+- AI engine is modular to allow future expansion (e.g., adding new modules for personality assessment or advanced skill tracking).
+- Frontend supports responsive design for mobile and desktop devices.
